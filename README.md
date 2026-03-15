@@ -148,6 +148,8 @@ This project is open source and available for educational and research purposes.
 - Use the 2D projections to identify the characteristic "wings" of the Lorenz attractor
 
 ---
+## you can visit here
+[Link Text] (https://shalulorenzattractor.streamlit.app/)
 
-**Trust in God with all your Heart**
+
 
