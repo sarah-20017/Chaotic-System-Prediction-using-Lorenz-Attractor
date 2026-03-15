@@ -103,6 +103,7 @@ st.subheader("3D Lorenz Attractor (Actual vs Predictions)")
 fig = go.Figure()
 
 fig.add_trace(go.Scatter3d(
+
     x=actual[:,0],
     y=actual[:,1],
     z=actual[:,2],
@@ -128,7 +129,9 @@ fig.update_layout(
         xaxis_title='X',
         yaxis_title='Y',
         zaxis_title='Z'
-    )
+    ),
+    height=800,
+    margin=dict(l=0, r=0, b=0, t=0)
 )
 
 st.plotly_chart(
@@ -158,6 +161,7 @@ for model_name in selected_models:
     fig2.add_trace(go.Scatter(y=pred[:,1], mode='lines', name=f'{model_name} y'))
     fig2.add_trace(go.Scatter(y=pred[:,2], mode='lines', name=f'{model_name} z'))
 
+fig2.update_layout(height=700, margin=dict(l=0, r=0, b=0, t=0))
 st.plotly_chart(fig2, use_container_width=True)
 
 # -------------------------
@@ -230,7 +234,10 @@ if st.button("Predict Future Points"):
             xaxis_title='X',
             yaxis_title='Y',
             zaxis_title='Z'
-        ))
+        ),
+            height=800,
+            margin=dict(l=0, r=0, b=0, t=0)
+        )
 
         st.plotly_chart(
             fig3,
