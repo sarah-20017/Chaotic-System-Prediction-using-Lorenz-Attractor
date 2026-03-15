@@ -149,7 +149,7 @@ This project is open source and available for educational and research purposes.
 
 ---
 ## you can visit here
-[Link Text] (https://shalulorenzattractor.streamlit.app/)
+https://shalulorenzattractor.streamlit.app/
 
 
 
